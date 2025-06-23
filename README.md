@@ -21,7 +21,7 @@ The application allows authenticated users to manage projects and associated tas
 
 - **Clone the repository**
 ```bash
-git clone https://github.com/your-username/project-manager-app.git
+git clone https://github.com/israel0/project-manager-app.git
 cd project-manager-app
 ```
 
@@ -47,7 +47,7 @@ php artisan migrate --seed
 php artisan serve
 ```
 
-## Overview of your architecture and decisions
+##  architecture and decisions
 
 **1. Decisions**  
 I chose to keep the architecture simple and expressive using Laravel controllers and policies, which is ideal for the scope of this project. Separate Vue components for task form, task list, and dashboard. Each responsibility (project, task, auth, layout) is isolated for better maintainability.
