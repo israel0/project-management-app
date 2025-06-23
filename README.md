@@ -19,22 +19,24 @@ The application allows authenticated users to manage projects and associated tas
 
 
 ## Setup Instructions
-# Clone the repository
+-  **Clone the repository**
 git clone https://github.com/your-username/project-manager-app.git
 cd project-manager-app
 
-# Install dependencies
+- **Install Dependencies**
+
 composer install
 npm install && npm run dev
 
-# Set up environment
+- **Set up environment**
+
 cp .env.example .env
 php artisan key:generate
 
-# Set up database
+- **Set up database**
 php artisan migrate --seed
 
-# Serve the app
+- **Serve the app**
 php artisan serve
 
 
