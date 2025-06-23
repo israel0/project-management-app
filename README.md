@@ -20,25 +20,32 @@ The application allows authenticated users to manage projects and associated tas
 
 ## Setup Instructions
 -  **Clone the repository**
+```bash
 git clone https://github.com/your-username/project-manager-app.git
 cd project-manager-app
+```
 
 - **Install Dependencies**
-
+```bash
 composer install
 npm install && npm run dev
+```
 
 - **Set up environment**
-
+```bash
 cp .env.example .env
 php artisan key:generate
+```
 
 - **Set up database**
+```bash
 php artisan migrate --seed
+```
 
 - **Serve the app**
+```bash
 php artisan serve
-
+```
 
 ## Overview of your architecture and decisions
 1. Modular Design
