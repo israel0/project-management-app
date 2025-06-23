@@ -17,9 +17,9 @@ The application allows authenticated users to manage projects and associated tas
 - **Testing:** Laravel Feature & Unit Tests
 - **Version Control:** Git & GitHub
 
-
 ## Setup Instructions
--  **Clone the repository**
+
+- **Clone the repository**
 ```bash
 git clone https://github.com/your-username/project-manager-app.git
 cd project-manager-app
@@ -48,13 +48,21 @@ php artisan serve
 ```
 
 ## Overview of your architecture and decisions
-1. Modular Design
-Separate Vue components for task form, task list, and dashboard.
-Each responsibility (project, task, auth, layout) is isolated for better maintainability.
 
+**1. Decisions**  
+Ensure Clean, Reusable and Readable Code. Separate Vue components for task form, task list, and dashboard. Each responsibility (project, task, auth, layout) is isolated for better maintainability.
 
-### 1. Clone Repository
+**2. How I Achieve It**  
+**Modular MVC Structure**  
+I separated concerns using Laravel’s MVC structure:
 
-```bash
-git clone https://github.com/your-username/project-management-app.git
-cd project-management-app
+- Controllers: ProjectController, TaskController, DashboardController
+- Models: Project, Task, Role
+- Pages: Projects/Show.vue, Tasks/TaskForm.vue
+
+**Inertia-Driven SPA**  
+I used Laravel Breeze with Inertia.js to build a single-page app where Laravel handles routing and Vue renders views.
+
+**Component-Based Frontend**  
+I reused Vue 3 components like TaskForm, AuthenticatedLayout, and Dropdown to keep the frontend clean and modular.
+
