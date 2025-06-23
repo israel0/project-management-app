@@ -12,8 +12,7 @@ class ProjectController extends Controller
 {
     public function index()
     {
-        $projects = Project::withCount("tasks")->latest()->get();
-
+        $projects = Project::where("user_id", auth()->user()->id)->withCount("tasks")->latest()->get();
         return Inertia::render('Projects/Index', [
             'projects' => $projects,
         ]);
