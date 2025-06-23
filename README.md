@@ -50,7 +50,7 @@ php artisan serve
 ## Overview of your architecture and decisions
 
 **1. Decisions**  
-Ensure Clean, Reusable and Readable Code. Separate Vue components for task form, task list, and dashboard. Each responsibility (project, task, auth, layout) is isolated for better maintainability.
+I chose to keep the architecture simple and expressive using Laravel controllers and policies, which is ideal for the scope of this project. Separate Vue components for task form, task list, and dashboard. Each responsibility (project, task, auth, layout) is isolated for better maintainability.
 
 **2. How I Achieve It**  
 **Modular MVC Structure**  
